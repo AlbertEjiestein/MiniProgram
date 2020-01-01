@@ -1,0 +1,14 @@
+<!--pages/input/input.wxml-->
+<input/>
+
+<input value="啥功能"></input>
+
+<input type="number"></input>
+
+<input password="true"></input>
+
+<input placeholder="hahaha"></input>
+
+<input bindinput="handleInput"
+       bindfocus="handleFocus"
+       bindblur="handleBlur"/>

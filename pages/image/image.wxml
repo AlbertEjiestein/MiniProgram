@@ -1,0 +1,5 @@
+<!--pages/image/image.wxml-->
+<view>
+  <button size="mini" bindtap="onChooseImage">选择图片</button>
+  <image mode="widthFix" src="{{imagePath}}"></image>
+</view>
