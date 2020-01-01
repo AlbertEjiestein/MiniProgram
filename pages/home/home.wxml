@@ -1,2 +1,20 @@
 <!--pages/home/home.wxml-->
 <text class="content">你好，小程序</text>
+
+<!-- 获取用户信息的方法 -->
+<button size="mini" open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo">
+获取授权
+</button>
+
+<!-- 展示用户信息的方法 -->
+<open-data type="userNickName"></open-data>
+<open-data type="userAvatarUrl"></open-data>
+
+<!-- view组件也可以被点击 -->
+<view bindtap="handleViewClick">点击view</view>
+
+<!-- 展示请求的数据 -->
+<view wx:for="{{list}}" wx:key="index">
+  <image src="{{item.image}}"></image>
+  {{item.title}}
+</view>

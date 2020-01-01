@@ -2,65 +2,46 @@
 Page({
 
   /**
-   * 页面的初始数据
+   * 2.页面的初始数据
    */
   data: {
-
+    list:[]
   },
 
   /**
-   * 生命周期函数--监听页面加载
+   * 1.生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    const _this = this;    wx.request({
+      url:"http://123.207.32.32:8000/api/w1/recommend",
+      success:function(res){
+        // console.log(res.data.data.list)
+        const data = res.data.data.list;
+        _this.setData({
+          list:data
+        })
+      }
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  // 3.监听wxml中的事件
+  handleGetUserInfo(event){
+    console.log(event)
+  },
+  handleViewClick(){
+    console.log('handleViewClick')
   },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  // 4.其它事件
+  // 监听页面滚动
+  onPageScroll(obj){
+    // console.log(obj)
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
+  // 监听到页面滚动到顶部
+  onReachBottom(){
+    console.log('页面滚动到顶部')
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  onPullDownRefresh(){
+    console.log('下拉刷新事件')
   }
 })
