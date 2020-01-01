@@ -1,2 +1,9 @@
 <!--pages/home/home.wxml-->
-<text class="content">你好，小程序</text>
+<!-- 数据展示 -->
+<view>hello {{message}}</view>
+
+<!-- wx:for展示列表 -->
+<view wx:for="{{movies}}" wx:key="index">{{item}}</view>
+
+<view>当前计数：{{counter}}</view>
+<button size="mini" bindtap="increment">+</button>
