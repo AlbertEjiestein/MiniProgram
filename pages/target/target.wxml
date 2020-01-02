@@ -1,0 +1,17 @@
+<!--pages/target/target.wxml-->
+<!-- <view bind:tap="onTap" 
+      data-name="yaj"
+      data-age="24">
+事件参数
+</view> -->
+
+
+<view class="outer" capture-bind:tap="onOuterCapture" bindtap="onOuterBind">
+  外层的view
+  <view class="middle" capture-bind:tap="onMiddleCapture" catchtap="onMiddleBind">
+    中间层的view
+    <view class="inner" capture-bind:tap="onInnerCapture" bindtap="onInnerBind">
+      内层的view
+    </view>
+  </view>
+</view>

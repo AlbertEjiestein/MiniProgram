@@ -1,2 +1,8 @@
 <!--pages/home/home.wxml-->
-<text class="content">你好，小程序</text>
+<view bindtouchstart="onTouchStart"
+      bindtouchmove="onTouchMove"
+      bindtouchend="onTouchEnd"
+      bindtap="onTap"
+      bindlongtap="onLongTap">
+常见事件类型
+</view>
