@@ -1,0 +1,20 @@
+<!--pages/wxs/wxs.wxml-->
+
+<!-- <wxs module="info">
+  var foo = "hello world";
+  var bar = function(){
+    return '你好，小程序'
+  }
+
+  module.exports = {
+    foo:foo,
+    bar:bar
+  }
+</wxs> -->
+
+<wxs src="wxs.wxs" module="info"/>
+
+<view>{{info.foo}}</view>
+<view>{{info.bar()}}</view>
+
+<view>{{info.priceFormat(2.333445, 4)}}</view>

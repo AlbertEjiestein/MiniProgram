@@ -1,0 +1,18 @@
+var foo = "hello world";
+var bar = function () {
+  return '你好，小程序'
+}
+
+function priceFormat(price, number){
+  var number = number || 2;
+
+  var f_price = parseFloat(price);
+
+  return f_price.toFixed(number);
+}
+
+module.exports = {
+  foo: foo,
+  bar: bar,
+  priceFormat: priceFormat
+}

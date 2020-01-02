@@ -1,0 +1,2 @@
+<include src="nav.wxml"/>
+<view>我是header</view>

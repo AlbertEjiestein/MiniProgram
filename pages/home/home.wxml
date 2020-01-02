@@ -1,2 +1,19 @@
 <!--pages/home/home.wxml-->
-<text class="content">你好，小程序</text>
+<include src="/pages/include/header.wxml"/>
+
+<button size="mini" bind:tap="onIncrement">+10</button>
+<view wx:if="{{score > 90}}">优秀</view>
+<view wx:elif="{{score > 80}}">良好</view>
+<view wx:elif="{{score > 90}}">合格</view>
+<view wx:else>不合格</view>
+
+<!-- hidden控制是否添加hidden属性 -->
+<button size="mini" hidden>hidden属性</button>
+
+<block wx:for="{{nums}}"
+       wx:for-item="num"
+       wx:for-index="i" wx:key="index">
+  <view>{{i}}{{num}}</view>
+</block>
+
+<include src="../include/footer.wxml"/>
