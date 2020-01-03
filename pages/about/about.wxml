@@ -1,0 +1,4 @@
+<!--pages/about/about.wxml-->
+<text>pages/about/about.wxml</text>
+<navigator open-type="navigateBack">返回上一级</navigator>
+<navigator delta="2" open-type="navigateBack">返回首页</navigator>

@@ -1,0 +1,5 @@
+<!--pages/detail/detail.wxml-->
+<text>pages/detail/detail.wxml</text>
+<navigator url="/pages/about/about">跳转到关于页</navigator>
+<navigator open-type="navigateBack">返回上一级</navigator>
+<button size="mini" bindtap="handleBackHome">使用方法返回上一级</button>
