@@ -1,0 +1,23 @@
+/* components/my-event/my-event.wxss */
+.my-event {
+  /* background-color: black;
+  color: white; */
+  font-size: 50rpx;
+
+  display: flex;
+}
+
+.my-event view {
+  flex: 1;
+  line-height:100rpx;
+  text-align: center;
+}
+
+.active text {
+  padding: 10rpx 20rpx;
+  border-bottom: 6rpx solid red;
+}
+
+.active {
+  color: red;
+}

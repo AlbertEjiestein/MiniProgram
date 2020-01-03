@@ -1,2 +1,28 @@
 <!--pages/home/home.wxml-->
-<text class="content">你好，小程序</text>
+<!-- 1.页面和组件样式隔离与共享 -->
+<!-- <view class="title">my-home</view>
+<my-cpn/> -->
+
+<!-- 2.向组件传递数据-properties -->
+<!-- <my-style title="hello-component"/> -->
+
+<!-- 3.向组件传递样式-externalClass -->
+<!-- <my-style title="title" content="conten"/> -->
+
+<!-- 4.组件向页面发送自定义事件-triggerEvent -->
+<my-event titles="{{['商品', '新闻', '消息']}}"
+          bind:titleclick="titleclick"
+          bind:increment="handleIncrementCpn"/>
+
+<view>老板:{{name}},年龄:{{age}},当前计数:{{counter}}</view>
+<view>当前index:{{currentIndex}}</view>
+
+<!-- 5.页面直接调用组件方法 selectComponent -->
+<button size="mini" bindtap="handleIncrement">+5</button>
+<my-sel id="my-sel"></my-sel>
+
+<!-- 6.单个插槽的使用 -->
+<my-slot>
+  <!-- <text slot="middle">单个插槽</text> -->
+  <view class="text">单个插槽</view>
+</my-slot>

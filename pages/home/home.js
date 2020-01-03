@@ -5,7 +5,10 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    currentIndex: 0,
+    counter:0,
+    name:'大个',
+    age:20
   },
 
   /**
@@ -62,5 +65,25 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  titleclick(event){
+    this.setData({
+      currentIndex: event.detail.index
+    })
+  },
+
+  handleIncrementCpn(event){
+    this.setData({
+      counter: ++this.data.counter,
+
+      name: event.detail.name,
+      age: event.detail.age
+    })
+  },
+
+  handleIncrement(){
+    const my_sel = this.selectComponent('#my-sel');
+    counter: my_sel.increment(5)
   }
 })

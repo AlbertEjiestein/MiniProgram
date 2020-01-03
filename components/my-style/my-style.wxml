@@ -1,0 +1,5 @@
+<!--components/my-style/my-style.wxml-->
+<!-- <view class="title">{{title}}</view> -->
+
+<view class="title">外部类1</view>
+<view class="content">外部类2</view>

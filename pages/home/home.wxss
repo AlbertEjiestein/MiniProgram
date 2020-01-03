@@ -1,5 +1,14 @@
 /* pages/home/home.wxss */
-.content {
-  color: red;
+.title {
+  background: red;
   font-size: 40px;
+}
+
+.content {
+  font-size: 60rpx;
+  background-color: orange
+}
+
+.text {
+  height: 100rpx
 }

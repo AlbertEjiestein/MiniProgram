@@ -1,0 +1,10 @@
+<!--components/my-slot/my-slot.wxml-->
+<view class="slot-cpn">
+  <view class="header">我是头部</view>
+  <button size="mini" bindtap="handleIncrement">+1</button>
+  <!-- <slot name="middle"></slot> -->
+  <slot></slot>
+  <view class="footer">我是底部</view>
+</view>
+
+

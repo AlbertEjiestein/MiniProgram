@@ -1,0 +1,13 @@
+<!--components/my-event/my-event.wxml-->
+<view class="my-event">
+  <view wx:for="{{titles}}"
+        wx:for-item="title"
+        wx:key="index"
+        class="{{currentIndex === index ? 'active' : ''}}"
+        data-index="{{index}}"
+        bindtap="titleClick">
+    <text>{{title}}</text>
+  </view>
+</view>
+
+<button size="mini" bindtap="handleIncrement">+1</button>
