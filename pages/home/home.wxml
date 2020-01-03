@@ -1,0 +1,7 @@
+<!--pages/home/home.wxml-->
+<button bindtap="handleShowToast">showToast</button>
+<button bindtap="handleShowModal">showModal</button>
+<button bindtap="handleShowLoading">showLoading</button>
+<button bindtap="handleShowActionClick">showActionClick</button>
+
+<button open-type="share">分享</button>
