@@ -11,7 +11,7 @@ App({
       success: res => {
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
         console.log(res)
-        console.log('res')
+        console.log('test')
         console.log('登录信息')
       }
     })
